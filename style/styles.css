@@ -323,150 +323,129 @@ li{
 
 
 @media screen and (max-width: 576px){
-    .container{
+    .container {
         grid-template-areas: 
-        "header header header"
-        "navigation navigation navigation"
-        "main main sidebar"
-        "footer advertise "
-        ;
+        "head"
+        "banner"
+        "main"
+        "footer";
+    }
     
-    }
-    .navbar, .banner, .banner-container{
-        flex-direction: column;
-        align-items: start;
-                   
-    }
-    .banner-img{
-       
-    }
-
-    .ul1 {
-        display: none;  /* Hide the menu on mobile */
-       
-    }
-    .btn{
-        display: none;
-    }
-    /* For screens smaller than 768px (Mobile) */
-
+    /* Make sure navbar is mobile-friendly */
     nav {
-        flex-direction: column; /* Stack navigation items vertically */
+        flex-direction: column;
         gap: 10px;
         margin: 10px;
+        align-items: flex-start;
     }
 
+    /* Hide menu and show hamburger on mobile */
     .ul1 {
-        flex-direction: column;
-        margin-right: 0;
-        gap: 20px;
+        display: none; /* Hide menu */
     }
 
-    .banner-container {
+    .btn {
+       display: none;
+    }
+
+    .banner-container, .containner1 {
         flex-direction: column;
         align-items: center;
+        margin: 50px;
     }
 
     .banner-tittle {
         font-size: 36px;
+        padding: 30px;
     }
 
     .banner-description {
         font-size: 16px;
+        padding: 30px;
+    }
+    
+       .side-gap{
+        margin: 10px 50px;
+       }
+    /* Adjust image sizes on mobile */
+    .im1, .im2 {
+        width: 100%;
+        height: auto;
     }
 
-    .containner1 {
-        flex-direction: column;
-        gap: 20px;
-        margin-bottom: 40px;
-    }
-
-    .star {
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .btn, .btn2, .btn3 {
+    .title {
         font-size: 18px;
-        padding: 8px 20px;
+        padding: 10px;
+    }
+     .stand {
+        font-size: 35px;
+        margin-bottom: 10px;
+     }
+    /* Make containers and columns stack nicely */
+    .container2{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    .container3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
     }
 
-    .part {
-        flex-direction: column;
-        margin-bottom: 40px;
+    /* Button adjustments for mobile */
+    .btn2, .btn3, .btn4 {
+        width: 50%;
+        font-size: 18px;
+        align-items: center;
+        margin-left: 90px;
     }
 
-    .container2 {
-        flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .row {
-        grid-template-columns: 1fr;
-        margin-bottom: 20px;
-    }
-
-    .stories1 {
-        flex: 1 1 100%;
-    }
-
+    /* Footer adjustments */
     .foot {
         flex-direction: column;
-        align-items: center;
         gap: 20px;
     }
 
-    .about-icon {
+    .icon1, .header, .about {
+       
+        padding: 10px;
+        
+    }
+    .foot{
         display: block;
-        text-align: center;
+    }
+    .kid{
+        font-size: 30px;
+    } 
+    
+    .a, .keep{
+        font-size: 20px;
+        padding-bottom: 10px;
+        
+    }
+    .p{
+        padding-bottom: 10px;
     }
 
-    .ul2 {
-        flex-direction: column;
-        gap: 15px;
+    /* Ensure elements don't overflow */
+    .row {
+        grid-template-columns: 1fr;
     }
 
-
+    /* Adjust spacing and font sizes */
     .name {
         font-size: 24px;
     }
 
-    .stand {
-        font-size: 30px;
-    }
-
-    .banner-tittle {
-        font-size: 30px;
-    }
-
-    .banner-description {
-        font-size: 14px;
-    }
-
-    .btn, .btn2, .btn3 {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
-
-    .title {
-        font-size: 14px;
-        padding: 10px;
-    }
-
     .star {
-        padding: 15px;
+        padding: 24px;
     }
 
-    .footer {
-        gap: 15px;
+    .description {
+        font-size: 14px;
     }
-
 }
-
-    
-    
-
-    
-
-
